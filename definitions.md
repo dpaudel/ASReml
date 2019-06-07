@@ -6,7 +6,7 @@ Random effect:
 
 Fixed effect:
 
-BLUE: As fixed effects, we obtain the best linear unbiased estimate (BLUE) of the variety effect, that is, the best estimate of the performance of that variety in that trial. 
+BLUE: estimates of fixed effects: As fixed effects, we obtain the best linear unbiased estimate (BLUE) of the variety effect, that is, the best estimate of the performance of that variety in that trial. 
 
 BLUP: Treated as random effects, we obtain the best linear unbiased predictor (BLUP) of the variety effect, that is, the best estimate of the performance of that variety in future trials.
 
