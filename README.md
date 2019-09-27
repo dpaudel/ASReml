@@ -1,4 +1,4 @@
-# ASReml
+# ASReml-R
 Tutorial on using ASReml-R in plant breeding experiments
 
 ## Dataset
