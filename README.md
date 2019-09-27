@@ -1,5 +1,5 @@
 # ASReml
-Tutorial on using ASReml in plant breeding experiments
+Tutorial on using ASReml-R in plant breeding experiments
 
 ## Dataset
 The dataset we will be using for this tutorial will be 
