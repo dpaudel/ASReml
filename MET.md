@@ -17,6 +17,13 @@ Run model
   #update.asreml(model2c)
 ```
 
+### Variance components
+By default ```sigma``` parameterization is reported
+
+```
+summary(model2c)$varcomp
+```
+
 ### BLUEs and BLUPs
 
 ```
