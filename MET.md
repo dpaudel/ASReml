@@ -35,3 +35,11 @@ predict(model2c,classify="Entry")$pvals # prediction of genotype across sites
 ```
 predict(model2c,classify="Site:Entry")$pvals
 ```
+
+### Wald's test for fixed effects
+
+```
+wald(model2c)
+#or
+wald.asreml(model2c)
+```
