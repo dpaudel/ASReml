@@ -24,7 +24,7 @@ summary(model2c,coef=TRUE)$coef.fixed # BLUEs # all=T is changed to coef=T in AS
 summary(model2c,coef=TRUE)$coef.random # BLUPs
 ```
 
-# Get predictions of genotypes across all sites
+### Get predictions of genotypes across all sites
 
 ```
 predict(model2c,classify="Entry")$pvals # prediction of genotype across sites
