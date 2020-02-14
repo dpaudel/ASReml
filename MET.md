@@ -10,11 +10,11 @@ data_evaluate <- merged_appc_db %>% filter(Trait==Trt, Year==Yr, Species==Spc) %
 Run model
 
 ```
- model2c<-asreml(fixed=Value~Site+Site:Rep,
-                  random=~corgh(Site):Entry,
-                  residual=~dsum(~id(units)|Site),
-                  data=data_evaluate)
-  #update.asreml(model2c)
+model2c<-asreml(fixed=Value~Location+Rep+Location*Rep,
+                  random=~corgh(Location):Entry,
+                  residual=~dsum(~id(units)|Location),
+                  data=data_evaluate, maxit=100000)
+#update.asreml(model2c)
 ```
 
 ### Variance components
@@ -49,4 +49,9 @@ predict(model2c,classify="Site:Entry")$pvals
 wald(model2c)
 #or
 wald.asreml(model2c)
+```
+### Heritability 
+
+```
+herit <-  vpredict(model2c,H2~V1/(V1+V2) # Change V based on variance component for each location
 ```
