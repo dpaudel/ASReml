@@ -17,3 +17,8 @@ i.e. There is a diferent block variance for each site _i_.
 height ~ mu + site !r at(site,1).block family
 ```
 Fits the main effect of site as fixed, a random family effect and __at(site,1).block__ specifies a random block effect only within the _i_ th level of the site factor. In this example only at the first site.
+
+```
+at(Type, entry):GENOTYPE
+```
+Specifies a random GENOTYPE effect only within the _entry_ level of the factor _Type_.
