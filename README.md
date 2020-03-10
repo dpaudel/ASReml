@@ -22,3 +22,9 @@ Fits the main effect of site as fixed, a random family effect and __at(site,1).b
 at(Type, entry):GENOTYPE
 ```
 Specifies a random GENOTYPE effect only within the _entry_ level of the factor _Type_.
+
+## BLUP
+For GWAS when Genotype is treated as a fixed effect
+```
+predict(asremlObject, classify='Genotype', maxiter=1)$pred
+```
