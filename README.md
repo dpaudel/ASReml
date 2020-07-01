@@ -28,3 +28,8 @@ For GWAS when Genotype is treated as a fixed effect
 ```
 predict(asremlObject, classify='Genotype', maxiter=1)$pvals
 ```
+## BLUE
+
+```
+BLUE<-summary(mod1,coef=TRUE)$coef.fixed
+```
