@@ -33,3 +33,4 @@ predict(asremlObject, classify='Genotype', maxiter=1)$pvals
 ```
 BLUE<-summary(mod1,coef=TRUE)$coef.fixed
 ```
+## Mixed model https://www.youtube.com/watch?v=VhMWPkTbXoY
