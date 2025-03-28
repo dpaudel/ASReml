@@ -55,7 +55,7 @@ def parse_gff(input_file, output_file):
     gene_df.to_csv(output_file, index=False)
     print(f"Data successfully saved to {output_file}")
 
-# Command-line interface
+# Run function
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Extract gene information from GFF file.')
     parser.add_argument('input_file', help='Path to the input GFF file')
